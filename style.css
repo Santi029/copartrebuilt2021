@@ -14,13 +14,13 @@ header {
 
 .header-image {
     margin: auto;
-    border: solid peru 5px;
     align-items: center;
 }
 
 main {
     width: 800px;
     margin: auto;
+    text-align: center;
 }
 
 .main-card {
