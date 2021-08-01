@@ -7,3 +7,29 @@ body {
     background-color: rgb(39, 39, 39);
     color: white;
 }
+
+.main-card {
+    border: solid red 1px;
+}
+
+.main-image {
+    border: solid rgb(30, 255, 0) 1px;
+}
+
+.main-text {
+    border: solid rgb(255, 0, 255) 1px;
+}
+
+.main-text h1{
+    color: royalblue;
+}
+
+.main-text h3{
+    color: royalblue;
+}
+
+.button-rs {
+    background-color: yellow;
+    color: black;
+    border: solid rgb(0, 255, 221) 1px;
+}
