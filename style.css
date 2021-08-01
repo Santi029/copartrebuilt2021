@@ -8,8 +8,17 @@ body {
     color: white;
 }
 
+.header-image {
+    align-items: center;
+    margin: auto;
+    border: solid peru 5px;
+}
+
 .main-card {
     border: solid red 1px;
+    width: 300px;
+    height: auto;
+    background-color: rgb(255, 255, 255, 0.5);
 }
 
 .main-image {
