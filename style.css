@@ -4,36 +4,45 @@ body {
     font-size: 16px;
     margin: auto;
     width: 1920px;
-    background-color: rgb(39, 39, 39);
+    background-color: rgb(0, 0, 0);
     color: white;
 }
 
+header {
+    display: flex;
+}
+
 .header-image {
-    align-items: center;
     margin: auto;
     border: solid peru 5px;
+    align-items: center;
+}
+
+main {
+    width: 800px;
+    margin: auto;
 }
 
 .main-card {
-    border: solid red 1px;
+    border: solid red 5px;
     width: 300px;
     height: auto;
     background-color: rgb(255, 255, 255, 0.5);
 }
 
-.main-image {
-    border: solid rgb(30, 255, 0) 1px;
+.card-image {
+    border: solid rgb(30, 255, 0) 5px;
 }
 
-.main-text {
-    border: solid rgb(255, 0, 255) 1px;
+.card-text {
+    border: solid rgb(255, 0, 255) 5px;
 }
 
-.main-text h1{
+.card-text h1{
     color: royalblue;
 }
 
-.main-text h3{
+.card-text h3{
     color: royalblue;
 }
 
