@@ -21,18 +21,27 @@ h1, h2{
 
 header {
     display: flex;
-    padding-top: 100px;
+    padding-top: 48px;
 }
 
 .header-image {
     margin: auto;
     align-items: center;
+    max-width: 700px;
 }
 
 main {
     width: 1000px;
     margin: auto;
     text-align: center;
+}
+
+main h1 {
+    font-size: 3.0em;
+}
+
+main p, h1{
+    padding-top: 32px;
 }
 
 .main-card {
