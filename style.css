@@ -3,7 +3,7 @@ body {
     font-family: 'Glegoo', serif;
     font-size: 16px;
     line-height: 1.5em;
-    margin: auto;
+    margin: 0px;
     width: 1920px;
     background-color: rgb(0, 0, 0);
     color: white;
@@ -34,6 +34,7 @@ main {
     width: 1000px;
     margin: auto;
     text-align: center;
+    /* border: solid rgb(167, 212, 1) 3px; */
 }
 
 main h1 {
@@ -173,11 +174,12 @@ main p, h1{
 .wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    grid-auto-rows: minmax(50px, auto);
-    width: 50%;
+    gap: 24px;
+    grid-auto-rows: minmax(24px, auto);
+    width: 86%;
     margin: auto;
-    padding: 48px;
+    padding: 24px;
+    /* border: solid red 3px; */
 }
 .one {
     grid-column: 1;
