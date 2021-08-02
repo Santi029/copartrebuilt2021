@@ -7,11 +7,17 @@ body {
     width: 1920px;
     background-color: rgb(0, 0, 0);
     color: white;
-    background-image: url(./img/shutterstock_1308510637.jpg);
+    background-image: url(./img/MicrosoftTeams-image.png);
+    background-repeat:no-repeat;
+    background-size: cover;
 }
+
+
 
 h1, h2{
     color: rgb(245, 188, 1);
+    font-family: 'Glegoo', 'Lato', 'Roboto', serif;
+    font-weight: 900;
 }
 
 header {
