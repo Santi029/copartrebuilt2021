@@ -26,9 +26,17 @@
         <div class="one">
             <section>
                 <div class="main-card">
-                    <div class="card-image">
-                        <img src="./img/shutterstock_267756197.jpg" alt="design-art" width="400px" height="auto">
-                    </div>
+                        <!-- Trigger the Modal -->
+                        <img id="myImg" src="./img/shutterstock_267756197.jpg"" alt="Snow" style="width:100%;max-width:300px">
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+                            <!-- The Close Button -->
+                            <span class="close">&times;</span>
+                            <!-- Modal Content (The Image) -->
+                            <img class="modal-content" id="img01">
+                            <!-- Modal Caption (Image Text) -->
+                            <div id="caption"></div>
+                        </div>
                     <div class="card-text">
                         <h2>First and Lastname</h2>
                         <h3>Year and Model</h3>
@@ -108,7 +116,7 @@
             </section>
         </div>
     </div>
-    <div>
+    <footer>
         <h4>
             Learn more about the Copart Rebuild Challenge.
         </h4>
@@ -118,4 +126,6 @@
         <h2>
             OPEN TO U.S.,  CANADA, & MEXICO
         </h2>
-    </div>
+    </footer>
+
+    <script src="./interaction.js"></script>
