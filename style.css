@@ -28,32 +28,41 @@ main {
     height: auto;
     border: solid white 3px;
     padding: 16px 24px;
-    border-radius: 12px;
+    border-radius: 8px;
 }
 
 .card-image img {
     width: 250px;
     height: auto;
-    border-radius: 12px 12px 0px 0px;
+    border-radius: 8px 8px 0px 0px;
 }
 
 .card-text {
     border-radius: 0px 0px 12px 12px;
+    margin: auto;
+    display: block;
+}
+
+.card-text button{
+    margin: auto;
+    display: block;
 }
 
 .card-text h2{
     color: rgb(187, 159, 0);
+    text-align: center;
 }
 
 .card-text h3{
     color: rgb(187, 159, 0);
+    text-align: center;
 }
 
 .button-rs {
     background-color: rgb(0, 31, 97);
     border: solid white 1px;
     color: rgb(255, 255, 255);
-    border-radius: 12px;
+    border-radius: 8px;
     padding: 8px 16px;
     margin: 16px;
 }
