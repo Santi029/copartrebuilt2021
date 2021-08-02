@@ -12,8 +12,6 @@ body {
     background-size: cover;
 }
 
-
-
 h1, h2{
     color: rgb(245, 188, 1);
     font-weight: 900;
@@ -171,6 +169,8 @@ main p, h1{
     }
 }
 
+
+/* Start Grid Section */
 .wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -205,6 +205,8 @@ main p, h1{
     grid-column: 3;
     grid-row: 2;
 }
+
+/* End Grid Section */
 
 .footer-btn {
     background-color: white;
