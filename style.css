@@ -97,7 +97,7 @@ main p{
 }
 
 .button-rs {
-    background-color: rgb(0, 31, 97);
+    background-color: rgb(22, 43, 87);
     border: solid white 1px;
     color: rgb(255, 255, 255);
     border-radius: 8px;
@@ -130,12 +130,7 @@ main p{
     background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
 }
 
-  /* Modal Content (Image) */
-.modal-content {
-    /* border: solid white 2px; */
-    background-color: #0020af;
-    height: auto;
-}
+
 
   /* Caption of Modal Image (Image Text) - Same Width as the Image */
 
@@ -147,19 +142,32 @@ main p{
     gap: 10px;
     grid-auto-rows: minmax(100px, auto);
 }
-.one {
+.one2 {
     grid-column: 1;
     grid-row: 1;
 }
-.two {
+.two2 {
     grid-column: 2;
     grid-row: 1;
 }
-.three {
+.three2 {
     grid-column: 3;
     grid-row: 1;
 }  
 
+  /* Modal Content */
+.modal-content {
+    background-color: #071c7a;
+    height: auto;
+    position: relative;
+    margin: auto;
+    width: 75%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    border: solid rgb(0, 0, 0) 1px;
+    border-radius: 12px;
+}
 
 /* Modal Header */
 .modal-header {
@@ -171,18 +179,28 @@ main p{
 .modal-body {
     padding: 60px;
     border: solid rgb(255, 255, 255) 2px;
-    width: 80%;
+    width: 90%;
     margin: auto;
     border-radius: 12px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
-.modal-text {
-    padding-top: 16px;
+.questions {
+    padding-bottom: 16px;
+    height: 60px;
+    margin: 0%;
+    padding: 0;
 }
-.modal-text h4, p{
+.questions h4{
     padding: 0%;
-    margin: 0px, 0px, 16px, 0px;
+    /* margin: 0px, 0px, 16px, 0px; */
     height: 25px;
+}
+
+.questions p{
+    margin: 0%;
+    padding: 0;    
 }
 
 
@@ -193,17 +211,7 @@ main p{
     color: white;
 }
 
-  /* Modal Content */
-.modal-content {
-    position: relative;
-    margin: auto;
-    padding: 100px;
-    width: 80%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    animation-name: animatetop;
-    animation-duration: 0.4s;
-    border: solid blueviolet 2px;
-}
+
 
   /* Add Animation */
 @keyframes animatetop {
