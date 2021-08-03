@@ -51,8 +51,12 @@ main {
 
 
 
-main p, h1{
+main h1{
     padding-top: 32px;
+}
+
+main p{
+    height: 100px;
 }
 
 .main-card {
@@ -289,6 +293,7 @@ main p, h1{
     margin-bottom: 16px;
     width: 300px;
     border: none;
+    height: 40px;
 }
 
 footer {
