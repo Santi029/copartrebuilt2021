@@ -12,9 +12,23 @@ body {
     background-size: cover;
 }
 
-h1, h2{
+h1 {
     color: rgb(245, 188, 1);
     font-weight: 900;
+    font-size: 2em;
+}
+
+h2{
+    color: rgb(245, 188, 1);
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+h3 {
+    color: #001f61;
+    font-weight: 700;
+    font-size: 1.25em;
+    font-family: "Glegoo";
 }
 
 header {
@@ -35,9 +49,7 @@ main {
     /* border: solid rgb(167, 212, 1) 3px; */
 }
 
-main h1 {
-    font-size: 3.0em;
-}
+
 
 main p, h1{
     padding-top: 32px;
@@ -46,19 +58,18 @@ main p, h1{
 .main-card {
     width: 250px;
     height: auto;
-    border: solid white 3px;
+    border: solid white 2px;
     padding: 16px 24px;
-    border-radius: 12px;
+    border-radius: 4px;
 }
 
 .card-image img {
     width: 250px;
     height: auto;
-    border-radius: 8px 8px 0px 0px;
+    border-radius: 2px;
 }
 
 .card-text {
-    border-radius: 0px 0px 12px 12px;
     margin: auto;
     display: block;
 }
@@ -69,13 +80,16 @@ main p, h1{
 }
 
 .card-text h2{
-    color: rgb(245, 188, 1);
     text-align: center;
+    padding: 8px;
+    margin: 0;
 }
 
 .card-text h3{
-    color: rgb(245, 188, 1);
     text-align: center;
+    color: rgb(245, 188, 1);
+    padding-bottom: 16px;
+    margin: 0;
 }
 
 .button-rs {
@@ -90,7 +104,7 @@ main p, h1{
 
 /* Style the Image Used to Trigger the Modal */
 #myImg {
-    border-radius: 5px;
+    border-radius: 2px;
     cursor: pointer;
     transition: 0.1s;
 }
@@ -210,16 +224,28 @@ main p, h1{
 
 .footer-btn {
     background-color: white;
-    color: rgb(0, 31, 97);
-    border-radius: 8px;
-    padding: 16px 36px;
-    margin: 16px;
+    border-radius: 6px;
+    padding: 8px 16px;
+    margin-bottom: 16px;
     width: 300px;
-    font-size: 1.25em;
-    font-weight: 600;
+    border: none;
 }
 
 footer {
     text-align: center;
     margin: auto;
+    /* word-spacing: 10px; */
+    
+}
+footer h2{
+    text-align: center;
+    margin: auto;
+    letter-spacing: 5px;
+    padding-bottom: 100px;
+    padding-top: 8px;
+}
+
+footer h3{
+    margin-top: -10px;
+    margin-bottom: -10px;
 }
