@@ -135,42 +135,54 @@ main p, h1{
 }
 
   /* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    padding: 16px 0;
-    height: 150px;
-    font-size: 1.5em;
+
+
+
+.wrapper2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
 }
+.one {
+    grid-column: 1;
+    grid-row: 1;
+}
+.two {
+    grid-column: 2;
+    grid-row: 1;
+}
+.three {
+    grid-column: 3;
+    grid-row: 1;
+}  
+
 
 /* Modal Header */
 .modal-header {
     padding: 2px 16px;
-    background-color: #5cb85c;
+    background-color: #0020af;
     color: white;
 }
 
   /* Modal Body */
-.modal-body {padding: 2px 16px;}
+.modal-body {
+    padding: 2px 16px;
+    background-color: #0020af;
+}
 
   /* Modal Footer */
 .modal-footer {
     padding: 2px 16px;
-    background-color: #5cb85c;
+    background-color: #d6c800;
     color: white;
 }
 
   /* Modal Content */
 .modal-content {
     position: relative;
-    background-color: #fefefe;
     margin: auto;
     padding: 0;
-    border: 1px solid #888;
     width: 80%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     animation-name: animatetop;
