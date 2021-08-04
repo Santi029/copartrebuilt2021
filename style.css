@@ -113,7 +113,7 @@ main p{
     transition: 0.1s;
 }
 
-#myImg:hover {opacity: 0.5;}
+.myImg:hover {opacity: 0.5;}
 
   /* The Modal (background) */
 .modal {
