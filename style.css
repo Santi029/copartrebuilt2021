@@ -34,7 +34,7 @@ h3 {
 header {
     display: flex;
     padding-top: 48px;
-    border: solid rgb(1, 212, 212) 3px;
+    /* border: solid rgb(1, 212, 212) 3px; */
 }
 
 .header-image {
@@ -66,8 +66,7 @@ main p{
     height: auto;
     border: solid white 2px;
     padding: 16px 24px;
-    border-radius: 4px;
-    border: solid rgb(189, 21, 255) 3px;
+    border-radius: 4px;    
 }
 
 .card-image img {

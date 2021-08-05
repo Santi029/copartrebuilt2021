@@ -15,7 +15,7 @@
 @media only screen and (max-width: 1024px) {
     body {
         border: solid rgb(47, 0, 255) 5px;
-        width: 414px;
+        width: 100%;
         background-image: url(./img/MicrosoftTeams-image.png);
         background-repeat: no-repeat;
         background-position: right top;
@@ -30,7 +30,7 @@
 
     .wrapper {
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: auto;
         gap: 24px;
         grid-auto-rows: minmax(24px, auto);
         width: 86%;
@@ -43,30 +43,55 @@
         grid-row: 1;
     }
     .two {
-        grid-column: 1;
-        grid-row: 2;
+        grid-column: 2;
+        grid-row: 1;
     }
     .three {
         grid-column: 1;
-        grid-row: 3;
+        grid-row: 2;
     }
     .four {
-        grid-column: 1;
-        grid-row: 4;
+        grid-column: 2;
+        grid-row: 2;
     }
     .five {
         grid-column: 1;
-        grid-row: 5;
+        grid-row: 3;
     }
     .six {
-        grid-column: 1;
-        grid-row: 6;
+        grid-column: 2;
+        grid-row: 3;
     }
 }
 
 @media only screen and (max-width: 414px) {
     body {
-        border: solid rgb(255, 0, 0) 5px;
+        /* border: solid rgb(255, 0, 0) 5px; */
+    }
+
+    .header-image {
+        margin: auto;
+        align-items: center;
+        max-width: 95%;
+        border: solid rgb(255, 21, 21) 3px;
+    }
+
+    main {
+        width: 95%;
+        height: 400px;
+    
+        margin: auto;
+        text-align: center;
+        border: solid rgb(255, 97, 255) 3px;
+
+    }
+    
+
+    .slideshow-container {
+        max-width: 100%;
+        position: relative;
+        margin: auto;
+        border: solid rgb(9, 255, 0) 3px;
     }
 
     .modal-content {
@@ -75,7 +100,7 @@
 
     .wrapper {
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: auto;
         gap: 24px;
         grid-auto-rows: minmax(24px, auto);
         width: 86%;
