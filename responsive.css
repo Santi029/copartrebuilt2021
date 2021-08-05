@@ -65,10 +65,7 @@
 }
 
 @media only screen and (max-width: 414px) {
-    body {
-        /* border: solid rgb(255, 0, 0) 5px; */
-    }
-
+    
     .header-image {
         margin: auto;
         align-items: center;
