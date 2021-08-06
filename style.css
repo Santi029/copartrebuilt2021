@@ -39,7 +39,7 @@ header {
 .header-image {
     margin: auto;
     align-items: center;
-    max-width: 25%;
+    max-width: 40%;
 }
 
 main {
@@ -66,10 +66,12 @@ main p{
     border-radius: 4px;    
 }
 
-.card-image img {
-    width: 50%;
-    height: auto;
+.main-card img {
+    /* width: 100%;
+    height: auto; */
     border-radius: 2px;
+    border: coral 3px solid;
+    object-fit: cover;
 }
 
 .card-text {
