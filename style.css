@@ -70,7 +70,6 @@ main p{
     /* width: 100%;
     height: auto; */
     border-radius: 2px;
-    border: coral 3px solid;
     object-fit: cover;
 }
 
@@ -163,12 +162,6 @@ main p{
     animation-duration: 0.4s;
     border: solid rgb(0, 0, 0) 1px;
     border-radius: 12px;
-}
-
-/* Modal Header */
-.modal-header {
-    padding: 2px 16px;
-    color: white;
 }
 
   /* Modal Body */
