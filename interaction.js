@@ -54,7 +54,7 @@ span.onclick = function() {
 
 
 // Get the modal
-var modal4 = document.getElementById("myModal");
+var modal4 = document.getElementById("myModal4");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var img4 = document.getElementById("myImg4");
