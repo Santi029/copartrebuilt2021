@@ -67,8 +67,8 @@ main p{
 }
 
 .main-card img {
-    /* width: 100%;
-    height: auto; */
+    width: 100%;
+    height: auto;
     border-radius: 2px;
     object-fit: cover;
 }
@@ -160,8 +160,8 @@ main p{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     animation-name: animatetop;
     animation-duration: 0.4s;
-    border: solid rgb(0, 0, 0) 1px;
     border-radius: 12px;
+    border: solid rgb(0, 0, 0, 0.0) 1px;
 }
 
   /* Modal Body */
@@ -176,19 +176,20 @@ main p{
 }
 
 .questions {
-    padding-bottom: 16px;
-    height: 60px;
-    margin: 0%;
-    padding: 0;
+    height: auto;
+    /* border: rgb(255, 230, 0) solid 2px; */
 }
-.questions h4{
-    padding: 0%;
-    height: 25px;
+.questions h5{
+    height: auto;
+    /* border: rgb(255, 27, 27) solid 2px; */
+    margin: 0px 0px 4px 0px;
 }
 
 .questions p{
-    margin: 0%;
-    padding: 0;    
+    margin: 0px 0px 48px 0px;
+    font-size: .8em;
+    line-height: 24px;
+    /* border: green solid 2px; */
 }
 
 
