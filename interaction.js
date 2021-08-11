@@ -159,52 +159,52 @@ span.onclick = function() {
 
 
 // Get the modal 10
-var modal7 = document.getElementById("myModal7");
+var modal10 = document.getElementById("myModal10");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var img7 = document.getElementById("myImg7");
+var img10 = document.getElementById("myImg10");
 
-img7.onclick = function(){
-  modal7.style.display = "block";
+img10.onclick = function(){
+  modal10.style.display = "block";
 }
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-  modal7.style.display = "none";
+  modal10.style.display = "none";
 }
 
 // Get the modal 11
-var modal8 = document.getElementById("myModal8");
+var modal11 = document.getElementById("myModal11");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var img8 = document.getElementById("myImg8");
+var img11 = document.getElementById("myImg11");
 
-img6.onclick = function(){
-  modal8.style.display = "block";
+img11.onclick = function(){
+  modal11.style.display = "block";
 }
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-  modal8.style.display = "none";
+  modal11.style.display = "none";
 }
 
 // Get the modal 12
-var modal9 = document.getElementById("myModal9");
+var modal12 = document.getElementById("myModal12");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var img9 = document.getElementById("myImg9");
+var img12 = document.getElementById("myImg12");
 
-img6.onclick = function(){
-  modal9.style.display = "block";
+img12.onclick = function(){
+  modal12.style.display = "block";
 }
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-  modal9.style.display = "none";
+  modal12.style.display = "none";
 }
