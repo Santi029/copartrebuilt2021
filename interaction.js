@@ -17,7 +17,7 @@ span.onclick = function() {
 }
 
 
-// Get the modal
+// Get the modal 2
 var modal2 = document.getElementById("myModal2");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
@@ -35,7 +35,7 @@ span.onclick = function() {
 }
 
 
-// Get the modal3
+// Get the modal 3
 var modal3 = document.getElementById("myModal3");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
@@ -53,7 +53,7 @@ span.onclick = function() {
 }
 
 
-// Get the modal
+// Get the modal 4
 var modal4 = document.getElementById("myModal4");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
@@ -71,7 +71,7 @@ span.onclick = function() {
 }
 
 
-// Get the modal
+// Get the modal 5
 var modal5 = document.getElementById("myModal5");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
@@ -89,7 +89,7 @@ span.onclick = function() {
 }
 
 
-// Get the modal
+// Get the modal 6
 var modal6 = document.getElementById("myModal6");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
@@ -129,7 +129,7 @@ var modal8 = document.getElementById("myModal8");
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var img8 = document.getElementById("myImg8");
 
-img6.onclick = function(){
+img8.onclick = function(){
   modal8.style.display = "block";
 }
 // Get the <span> element that closes the modal
@@ -146,7 +146,7 @@ var modal9 = document.getElementById("myModal9");
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var img9 = document.getElementById("myImg9");
 
-img6.onclick = function(){
+img9.onclick = function(){
   modal9.style.display = "block";
 }
 // Get the <span> element that closes the modal
