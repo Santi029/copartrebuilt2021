@@ -16,6 +16,7 @@ span.onclick = function() {
   modal.style.display = "none";
 }
 
+// -------------------------------------------------------------------------------------------------------------------------
 
 // Get the modal 2
 var modal2 = document.getElementById("myModal2");
@@ -34,6 +35,7 @@ span.onclick = function() {
   modal2.style.display = "none";
 }
 
+// -------------------------------------------------------------------------------------------------------------------------
 
 // Get the modal 3
 var modal3 = document.getElementById("myModal3");
@@ -52,6 +54,7 @@ span.onclick = function() {
   modal3.style.display = "none";
 }
 
+// -------------------------------------------------------------------------------------------------------------------------
 
 // Get the modal 4
 var modal4 = document.getElementById("myModal4");
@@ -70,6 +73,7 @@ span.onclick = function() {
   modal4.style.display = "none";
 }
 
+// -------------------------------------------------------------------------------------------------------------------------
 
 // Get the modal 5
 var modal5 = document.getElementById("myModal5");
@@ -88,6 +92,7 @@ span.onclick = function() {
   modal5.style.display = "none";
 }
 
+// -------------------------------------------------------------------------------------------------------------------------
 
 // Get the modal 6
 var modal6 = document.getElementById("myModal6");
@@ -106,6 +111,8 @@ span.onclick = function() {
   modal6.style.display = "none";
 }
 
+// -------------------------------------------------------------------------------------------------------------------------
+
 // Get the modal 7
 var modal7 = document.getElementById("myModal7");
 
@@ -122,6 +129,8 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
   modal7.style.display = "none";
 }
+
+// -------------------------------------------------------------------------------------------------------------------------
 
 // Get the modal 8
 var modal8 = document.getElementById("myModal8");
@@ -140,6 +149,8 @@ span.onclick = function() {
   modal8.style.display = "none";
 }
 
+// -------------------------------------------------------------------------------------------------------------------------
+
 // Get the modal 9
 var modal9 = document.getElementById("myModal9");
 
@@ -157,6 +168,7 @@ span.onclick = function() {
   modal9.style.display = "none";
 }
 
+// -------------------------------------------------------------------------------------------------------------------------
 
 // Get the modal 10
 var modal10 = document.getElementById("myModal10");
@@ -175,6 +187,8 @@ span.onclick = function() {
   modal10.style.display = "none";
 }
 
+// -------------------------------------------------------------------------------------------------------------------------
+
 // Get the modal 11
 var modal11 = document.getElementById("myModal11");
 
@@ -192,6 +206,8 @@ span.onclick = function() {
   modal11.style.display = "none";
 }
 
+// -------------------------------------------------------------------------------------------------------------------------
+
 // Get the modal 12
 var modal12 = document.getElementById("myModal12");
 
@@ -208,3 +224,5 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
   modal12.style.display = "none";
 }
+
+// -------------------------------------------------------------------------------------------------------------------------
