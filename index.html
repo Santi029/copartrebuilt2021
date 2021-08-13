@@ -1,644 +1,714 @@
-<style >
-.rebuild-body {
-    padding: 0%;
-    font-family: 'Glegoo', serif;
-    font-size: 16px;
-    line-height: 1.5em;
-    margin: 0px;
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    background-image: url(./img/MicrosoftTeams-image.png);
-    background-repeat:no-repeat;
-    background-size: cover;
-}
-
-h1 {
-    color: rgb(245, 188, 1);
-    font-weight: 900;
-    font-size: 2em;
-}
-
-h2{
-    color: rgb(245, 188, 1);
-    font-weight: 700;
-    font-size: 1.5em;
-}
-
-h3 {
-    color: #001f61;
-    font-weight: 700;
-    font-size: 1.25em;
-    font-family: "Glegoo";
-}
-
-.rebuild-header {
-    display: flex;
-    padding-top: 48px;
-}
-
-.header-image {
-    margin: auto;
-    align-items: center;
-    max-width: 30%;
-}
-
-.rebuild-main {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-}
-
-
-
-.rebuild-main h1{
-    padding-top: 32px;
-}
-
-.rebuild-main p{
-    height: 100px;
-    max-width: 1000px;
-    margin: auto;
-}
-
-.main-card {
-    width: 100%;
-    height: auto;
-    border: solid white 2px;
-    padding: 16px 24px;
-    border-radius: 4px;    
-}
-
-.main-card img {
-    width: 100%;
-    height: 200px;
-    border-radius: 2px;
-    object-fit: cover;
-}
-
-.card-text {
-    margin: auto;
-    display: block;
-}
-
-.card-text button{
-    margin: auto;
-    display: block;
-}
-
-.card-text h2{
-    text-align: center;
-    padding: 8px;
-    margin: 0;
-}
-
-.card-text h3{
-    text-align: center;
-    color: rgb(245, 188, 1);
-    padding-bottom: 16px;
-    margin: 0;
-}
-
-.button-rs {
-    background-color: rgb(22, 43, 87);
-    border: solid white 1px;
-    color: rgb(255, 255, 255);
-    border-radius: 8px;
-    padding: 4px 16px;
-    margin: 16px;
-    width: 80%;
-}
-
-/* Style the Image Used to Trigger the Modal */
-#myImg {
-    border-radius: 2px;
-    cursor: pointer;
-    transition: 0.1s;
-}
-
-.myImg:hover {opacity: 0.5;}
-
-  /* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px;
-    padding-bottom: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
-}
-
-  /* Caption of Modal Image (Image Text) - Same Width as the Image */
-.wrapper2 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
-}
-.one2 {
-    grid-column: 1;
-    grid-row: 1;
-}
-.two2 {
-    grid-column: 2;
-    grid-row: 1;
-}
-.three2 {
-    grid-column: 3;
-    grid-row: 1;
-}  
-
-.wrapper2 img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
-
-  /* Modal Content */
-.modal-content {
-    background-color: #071c7a;
-    height: auto;
-    position: relative;
-    margin: auto;
-    width: 75%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    animation-name: animatetop;
-    animation-duration: 0.4s;
-    border-radius: 12px;
-    border: solid rgb(0, 0, 0, 0.0) 1px;
-}
-
-  /* Modal Body */
-.modal-body {
-    padding: 60px;
-    border: solid rgb(255, 255, 255) 2px;
-    width: 90%;
-    margin: auto;
-    border-radius: 12px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
-.questions {
-    height: auto;
-    /* border: rgb(255, 230, 0) solid 2px; */
-}
-.questions h5{
-    height: auto;
-    /* border: rgb(255, 27, 27) solid 2px; */
-    margin: 0px 0px 4px 0px;
-}
-
-.questions p{
-    margin: 0px 0px 48px 0px;
-    font-size: .8em;
-    line-height: 24px;
-    /* border: green solid 2px; */
-}
-
-
-  /* Modal Footer */
-.modal-footer {
-    padding: 2px 16px;
-    background-color: #d6c800;
-    color: white;
-}
-
-
-
-  /* Add Animation */
-@keyframes animatetop {
-    from {top: -300px; opacity: 0}
-    to {top: 0; opacity: 1}
-}
-
-  /* Add Animation - Zoom in the Modal */
-.modal-content, #caption {
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
-
-@keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
-}
-
-  /* The Close Button */
-.close {
-    position: absolute;
-    top: 30px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-
-/* Start Grid Section */
-.wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    grid-auto-rows: minmax(24px, auto);
-    width: 86%;
-    margin: auto;
-    padding: 24px;
-}
-.one {
-    grid-column: 1;
-    grid-row: 1;
-}
-.two {
-    grid-column: 2;
-    grid-row: 1;
-}
-.three {
-    grid-column: 3;
-    grid-row: 1;
-}
-.four {
-    grid-column: 1;
-    grid-row: 2;
-}
-.five {
-    grid-column: 2;
-    grid-row: 2;
-}
-.six {
-    grid-column: 3;
-    grid-row: 2;
-}
-
-/* End Grid Section */
-
-.footer-btn {
-    background-color: white;
-    border-radius: 6px;
-    padding: 8px 16px;
-    margin-bottom: 16px;
-    width: 300px;
-    border: none;
-    height: 40px;
-}
-
-.rebuild-footer {
-    text-align: center;
-    margin: auto;
-}
-.rebuild-footer h2{
-    text-align: center;
-    margin: auto;
-    letter-spacing: 5px;
-    padding-bottom: 100px;
-    padding-top: 8px;
-}
-
-.rebuild-footer h3{
-    margin-top: -10px;
-    margin-bottom: -10px;
-}
-
-
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-    max-width: 60%;
-    position: relative;
-    margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-    display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 3em;
-    transition: 0.6s ease;
-    border-radius: 50%;
-    user-select: none;
-    border: solid rgb(255, 255, 255) 3px;
-}
-
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 50%;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-    background-color: rgba(255, 217, 0, 0.8);
-    border-radius: 50%;
-    border: solid rgb(255, 255, 255) 3px;
-}
-
-/* Caption text */
-.text {
-    color: #ffffff;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: -24px;
-    width: 100%;
-    text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-    color: #f2f2f2;
-    font-size: 1em;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: rgb(255, 217, 0, 0.3);
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-    background-color: rgb(255, 217, 0);
-}
-
-/* Fading animation */
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
-
-@keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
-
-
-
-@media only screen and (max-width: 1024px) {
-
-.header-image {
-    margin: auto;
-    align-items: center;
-    max-width: 80%;
-}
-
-.rebuild-main {
-    width: 95%;
-    height: auto;
-    margin: auto;
-    text-align: center;
-}
-
-
-.slideshow-container {
-    max-width: 100%;
-    position: relative;
-    margin: auto;
-}
-
-.main-card {
-    width: 100%;
-    height: auto;
-}
-
-.main-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 2px;
-    object-fit: cover;
-}
-
-.modal-content {
-    width: 100%;
+<style>
+    .rebuild-body {
+        padding: 0%;
+        font-family: 'Glegoo', serif;
+        font-size: 16px;
+        line-height: 1.5em;
+        margin: 0px;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        background-image: url(./img/MicrosoftTeams-image.png);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
-.wrapper {
-    display: grid;
-    grid-template-columns: auto;
-    gap: 24px;
-    grid-auto-rows: minmax(24px, auto);
-    width: 86%;
-    margin: auto;
-    padding: 24px;
-}
-.one {
-    grid-column: 1;
-    grid-row: 1;
-}
-.two {
-    grid-column: 2;
-    grid-row: 1;
-}
-.three {
-    grid-column: 1;
-    grid-row: 2;
-}
-.four {
-    grid-column: 2;
-    grid-row: 2;
-}
-.five {
-    grid-column: 1;
-    grid-row: 3;
-}
-.six {
-    grid-column: 2;
-    grid-row: 3;
-}
-}
-
-@media only screen and (max-width: 768px) {
-.header-image {
-    margin: auto;
-    align-items: center;
-    max-width: 90%;
-}
-
-.rebuild-main {
-    width: 95%;
-    height: 300px;
-    margin: auto;
-    text-align: center;
-}
-
-
-.slideshow-container {
-    max-width: 100%;
-    position: relative;
-    margin: auto;
-}
-
-.main-card {
-    width: 100%;
-    height: auto;
-}
-
-.card-image img {
-    width: 50%;
-    height: auto;
-    border-radius: 2px;
-}
-
-.modal-content {
-    width: 100%;
+    h1 {
+        color: rgb(245, 188, 1);
+        font-weight: 900;
+        font-size: 2em;
     }
 
-.wrapper {
-    display: grid;
-    grid-template-columns: auto;
-    gap: 24px;
-    grid-auto-rows: minmax(24px, auto);
-    width: 86%;
-    margin: auto;
-    padding: 24px;
-}
-.one {
-    grid-column: 1;
-    grid-row: 1;
-}
-.two {
-    grid-column: 2;
-    grid-row: 1;
-}
-.three {
-    grid-column: 1;
-    grid-row: 2;
-}
-.four {
-    grid-column: 2;
-    grid-row: 2;
-}
-.five {
-    grid-column: 1;
-    grid-row: 3;
-}
-.six {
-    grid-column: 2;
-    grid-row: 3;
-}
-}
-
-@media only screen and (max-width: 414px) {
-.rebuild-body {
-    max-width: 95%
-};
-
-.header-image {
-    margin: auto;
-    align-items: center;
-    max-width: 95%;
-}
-
-.rebuild-main {
-    width: 95%;
-    height: 400px;
-
-    margin: auto;
-    text-align: center;
-}
-
-
-.slideshow-container {
-    max-width: 100%;
-    position: relative;
-    margin: auto;
-}
-
-.modal-content {
-    width: 100%;
+    h2 {
+        color: rgb(245, 188, 1);
+        font-weight: 700;
+        font-size: 1.5em;
     }
 
-.wrapper {
-    display: grid;
-    grid-template-columns: auto;
-    gap: 24px;
-    grid-auto-rows: minmax(24px, auto);
-    width: 86%;
-    margin: auto;
-    padding: 24px;
-}
-.one {
-    grid-column: 1;
-    grid-row: 1;
-}
-.two {
-    grid-column: 1;
-    grid-row: 2;
-}
-.three {
-    grid-column: 1;
-    grid-row: 3;
-}
-.four {
-    grid-column: 1;
-    grid-row: 4;
-}
-.five {
-    grid-column: 1;
-    grid-row: 5;
-}
-.six {
-    grid-column: 1;
-    grid-row: 6;
-}
+    h3 {
+        color: #001f61;
+        font-weight: 700;
+        font-size: 1.25em;
+        font-family: "Glegoo";
+    }
 
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    color: white;
-    font-weight: lighter;
-    font-size: 2em;
-    transition: 0.6s ease;
-    border-radius: 50%;
-    user-select: none;
-    border: solid rgb(255, 255, 255) 1px;
-}
+    .rebuild-header {
+        display: flex;
+        padding-top: 48px;
+    }
 
-.rebuilt-footer {
-    max-width: 90%;
-}
-}
+    .header-image {
+        margin: auto;
+        align-items: center;
+        max-width: 30%;
+    }
+
+    .rebuild-main {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+
+
+
+    .rebuild-main h1 {
+        padding-top: 32px;
+    }
+
+    .rebuild-main p {
+        height: 100px;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .main-card {
+        width: 100%;
+        height: auto;
+        border: solid white 2px;
+        padding: 16px 24px;
+        border-radius: 4px;
+    }
+
+    .main-card img {
+        width: 100%;
+        height: 200px;
+        border-radius: 2px;
+        object-fit: cover;
+    }
+
+    .card-text {
+        margin: auto;
+        display: block;
+    }
+
+    .card-text button {
+        margin: auto;
+        display: block;
+    }
+
+    .card-text h2 {
+        text-align: center;
+        padding: 8px;
+        margin: 0;
+    }
+
+    .card-text h3 {
+        text-align: center;
+        color: rgb(245, 188, 1);
+        padding-bottom: 16px;
+        margin: 0;
+    }
+
+    .button-rs {
+        background-color: rgb(22, 43, 87);
+        border: solid white 1px;
+        color: rgb(255, 255, 255);
+        border-radius: 8px;
+        padding: 4px 16px;
+        margin: 16px;
+        width: 80%;
+    }
+
+    /* Style the Image Used to Trigger the Modal */
+    #myImg {
+        border-radius: 2px;
+        cursor: pointer;
+        transition: 0.1s;
+    }
+
+    .myImg:hover {
+        opacity: 0.5;
+    }
+
+    /* The Modal (background) */
+    .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        padding-top: 100px;
+        padding-bottom: 100px;
+        /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgba(0, 0, 0, 0.8);
+        /* Black w/ opacity */
+    }
+
+    /* Caption of Modal Image (Image Text) - Same Width as the Image */
+    .wrapper2 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+    }
+
+    .one2 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .two2 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .three2 {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .wrapper2 img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    /* Modal Content */
+    .modal-content {
+        background-color: #071c7a;
+        height: auto;
+        position: relative;
+        margin: auto;
+        width: 75%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        animation-name: animatetop;
+        animation-duration: 0.4s;
+        border-radius: 12px;
+        border: solid rgb(0, 0, 0, 0.0) 1px;
+    }
+
+    /* Modal Body */
+    .modal-body {
+        padding: 60px;
+        border: solid rgb(255, 255, 255) 2px;
+        width: 90%;
+        margin: auto;
+        border-radius: 12px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .questions {
+        height: auto;
+        /* border: rgb(255, 230, 0) solid 2px; */
+    }
+
+    .questions h5 {
+        height: auto;
+        /* border: rgb(255, 27, 27) solid 2px; */
+        margin: 0px 0px 4px 0px;
+    }
+
+    .questions p {
+        margin: 0px 0px 48px 0px;
+        font-size: .8em;
+        line-height: 24px;
+        /* border: green solid 2px; */
+    }
+
+
+    /* Modal Footer */
+    .modal-footer {
+        padding: 2px 16px;
+        background-color: #d6c800;
+        color: white;
+    }
+
+
+
+    /* Add Animation */
+    @keyframes animatetop {
+        from {
+            top: -300px;
+            opacity: 0
+        }
+
+        to {
+            top: 0;
+            opacity: 1
+        }
+    }
+
+    /* Add Animation - Zoom in the Modal */
+    .modal-content,
+    #caption {
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+
+    @keyframes zoom {
+        from {
+            transform: scale(0)
+        }
+
+        to {
+            transform: scale(1)
+        }
+    }
+
+    /* The Close Button */
+    .close {
+        position: absolute;
+        top: 30px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+
+    /* Start Grid Section */
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        grid-auto-rows: minmax(24px, auto);
+        width: 86%;
+        margin: auto;
+        padding: 24px;
+    }
+
+    .one {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .two {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .three {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .four {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .five {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .six {
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    /* End Grid Section */
+
+    .footer-btn {
+        background-color: white;
+        border-radius: 6px;
+        padding: 8px 16px;
+        margin-bottom: 16px;
+        width: 300px;
+        border: none;
+        height: 40px;
+    }
+
+    .rebuild-footer {
+        text-align: center;
+        margin: auto;
+    }
+
+    .rebuild-footer h2 {
+        text-align: center;
+        margin: auto;
+        letter-spacing: 5px;
+        padding-bottom: 100px;
+        padding-top: 8px;
+    }
+
+    .rebuild-footer h3 {
+        margin-top: -10px;
+        margin-bottom: -10px;
+    }
+
+
+    * {
+        box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+        max-width: 60%;
+        position: relative;
+        margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+        display: none;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 3em;
+        transition: 0.6s ease;
+        border-radius: 50%;
+        user-select: none;
+        border: solid rgb(255, 255, 255) 3px;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 50%;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(255, 217, 0, 0.8);
+        border-radius: 50%;
+        border: solid rgb(255, 255, 255) 3px;
+    }
+
+    /* Caption text */
+    .text {
+        color: #ffffff;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: -24px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 1em;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: rgb(255, 217, 0, 0.3);
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+        background-color: rgb(255, 217, 0);
+    }
+
+    /* Fading animation */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+
+
+    @media only screen and (max-width: 1024px) {
+
+        .header-image {
+            margin: auto;
+            align-items: center;
+            max-width: 80%;
+        }
+
+        .rebuild-main {
+            width: 95%;
+            height: auto;
+            margin: auto;
+            text-align: center;
+        }
+
+
+        .slideshow-container {
+            max-width: 100%;
+            position: relative;
+            margin: auto;
+        }
+
+        .main-card {
+            width: 100%;
+            height: auto;
+        }
+
+        .main-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 2px;
+            object-fit: cover;
+        }
+
+        .modal-content {
+            width: 100%;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: auto;
+            gap: 24px;
+            grid-auto-rows: minmax(24px, auto);
+            width: 86%;
+            margin: auto;
+            padding: 24px;
+        }
+
+        .one {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        .two {
+            grid-column: 2;
+            grid-row: 1;
+        }
+
+        .three {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        .four {
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+        .five {
+            grid-column: 1;
+            grid-row: 3;
+        }
+
+        .six {
+            grid-column: 2;
+            grid-row: 3;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .header-image {
+            margin: auto;
+            align-items: center;
+            max-width: 90%;
+        }
+
+        .rebuild-main {
+            width: 95%;
+            height: 300px;
+            margin: auto;
+            text-align: center;
+        }
+
+
+        .slideshow-container {
+            max-width: 100%;
+            position: relative;
+            margin: auto;
+        }
+
+        .main-card {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-image img {
+            width: 50%;
+            height: auto;
+            border-radius: 2px;
+        }
+
+        .modal-content {
+            width: 100%;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: auto;
+            gap: 24px;
+            grid-auto-rows: minmax(24px, auto);
+            width: 86%;
+            margin: auto;
+            padding: 24px;
+        }
+
+        .one {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        .two {
+            grid-column: 2;
+            grid-row: 1;
+        }
+
+        .three {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        .four {
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+        .five {
+            grid-column: 1;
+            grid-row: 3;
+        }
+
+        .six {
+            grid-column: 2;
+            grid-row: 3;
+        }
+    }
+
+    @media only screen and (max-width: 414px) {
+        .rebuild-body {
+            max-width: 95%
+        }
+
+        ;
+
+        .header-image {
+            margin: auto;
+            align-items: center;
+            max-width: 95%;
+        }
+
+        .rebuild-main {
+            width: 95%;
+            height: 400px;
+
+            margin: auto;
+            text-align: center;
+        }
+
+
+        .slideshow-container {
+            max-width: 100%;
+            position: relative;
+            margin: auto;
+        }
+
+        .modal-content {
+            width: 100%;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: auto;
+            gap: 24px;
+            grid-auto-rows: minmax(24px, auto);
+            width: 86%;
+            margin: auto;
+            padding: 24px;
+        }
+
+        .one {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        .two {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        .three {
+            grid-column: 1;
+            grid-row: 3;
+        }
+
+        .four {
+            grid-column: 1;
+            grid-row: 4;
+        }
+
+        .five {
+            grid-column: 1;
+            grid-row: 5;
+        }
+
+        .six {
+            grid-column: 1;
+            grid-row: 6;
+        }
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            color: white;
+            font-weight: lighter;
+            font-size: 2em;
+            transition: 0.6s ease;
+            border-radius: 50%;
+            user-select: none;
+            border: solid rgb(255, 255, 255) 1px;
+        }
+
+        .rebuilt-footer {
+            max-width: 90%;
+        }
+    }
 </style>
 
 <div class="rebuild-body">
@@ -649,7 +719,9 @@ h3 {
         <h1>
             2021 Stories
         </h1>
-        <p>We've received some great entries so far this year! Want to learn more about these fantastic rebuilds? Take a look at some of the stories below to get the inside scoop on these rebuild processes from start to finish.</p>
+        <p>We've received some great entries so far this year! Want to learn more about these fantastic rebuilds? Take a
+            look at some of the stories below to get the inside scoop on these rebuild processes from start to finish.
+        </p>
     </div>
 
     <!-- Slideshow container -->
@@ -958,7 +1030,9 @@ h3 {
                                         <div>
                                             <div class="questions">
                                                 <h5>What was the hardest part of your truck to fix?</h5>
-                                                <p>The hardest part of the car to fix was changing all the rusted and thin metal with new 16–18-gauge steel. Specially all the floor pan.</p>
+                                                <p>The hardest part of the car to fix was changing all the rusted and
+                                                    thin metal with new 16–18-gauge steel. Specially all the floor pan.
+                                                </p>
                                             </div>
 
                                             <div class="questions">
@@ -1227,37 +1301,48 @@ h3 {
                                         <div>
                                             <div class="questions">
                                                 <h5>What was the hardest part of your truck to fix?</h5>
-                                                <p>The hardest part to fix was definitely the airbag system. I did my best but with limited information and so many possible issues, it was quite the headache (turns out if you don’t have the dash passenger airbag light in, you throw a code).</p>
+                                                <p>The hardest part to fix was definitely the airbag system. I did my
+                                                    best but with limited information and so many possible issues, it
+                                                    was quite the headache (turns out if you don’t have the dash
+                                                    passenger airbag light in, you throw a code).</p>
                                             </div>
 
                                             <div class="questions">
                                                 <h5>How many vehicles have you rebuilt?</h5>
-                                                <p>This was my first rebuild, but since then I’ve bought a few more cars at Copart and brought them back to life.</p>
+                                                <p>This was my first rebuild, but since then I’ve bought a few more cars
+                                                    at Copart and brought them back to life.</p>
                                             </div>
 
                                             <div class="questions">
                                                 <h5>What was your budget on the Rebuild?</h5>
-                                                <p>I bought the truck for a little over $8k, then spent another $3,500 to fix it.</p>
+                                                <p>I bought the truck for a little over $8k, then spent another $3,500
+                                                    to fix it.</p>
                                             </div>
 
                                             <div class="questions">
                                                 <h5>How long did it take from start to finish?</h5>
-                                                <p>I bought it in October 2020 and finally got it road legal in March 2021.</p>
+                                                <p>I bought it in October 2020 and finally got it road legal in March
+                                                    2021.</p>
                                             </div>
 
                                             <div class="questions">
                                                 <h5>Why did you pick a Tacoma?</h5>
-                                                <p>I’ve always wanted a Tacoma since I was 15, mainly because I loved my dad’s. I could never afford one, and then found Copart might be the way to go.</p>
+                                                <p>I’ve always wanted a Tacoma since I was 15, mainly because I loved my
+                                                    dad’s. I could never afford one, and then found Copart might be the
+                                                    way to go.</p>
                                             </div>
 
                                             <div class="questions">
                                                 <h5>Did you do it all yourself?</h5>
-                                                <p>I did everything myself, except for pulling the frame because I don’t have a rack. You can bet if I did, I would’ve done that too.</p>
+                                                <p>I did everything myself, except for pulling the frame because I don’t
+                                                    have a rack. You can bet if I did, I would’ve done that too.</p>
                                             </div>
 
                                             <div class="questions">
                                                 <h5>Tell us a little about yourself.</h5>
-                                                <p>I’ve always liked working on cars, but just in my spare time. My dad taught me how to wrench, and he learned from my grandfather who was a WW2 Navy aircraft mechanic. It’s a family legacy.</p>
+                                                <p>I’ve always liked working on cars, but just in my spare time. My dad
+                                                    taught me how to wrench, and he learned from my grandfather who was
+                                                    a WW2 Navy aircraft mechanic. It’s a family legacy.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1303,17 +1388,20 @@ h3 {
                                         <div>
                                             <div class="questions">
                                                 <h5>What was the hardest part of your truck to fix?</h5>
-                                                <p>Performing some rocker panel repairs that challenged my auto body ability.</p>
+                                                <p>Performing some rocker panel repairs that challenged my auto body
+                                                    ability.</p>
                                             </div>
 
                                             <div class="questions">
                                                 <h5>How many vehicles have you rebuilt?</h5>
-                                                <p>Far too many to count! But the Wrangler was the "newest vehicle," year wise.</p>
+                                                <p>Far too many to count! But the Wrangler was the "newest vehicle,"
+                                                    year wise.</p>
                                             </div>
 
                                             <div class="questions">
                                                 <h5>What was your budget on the Rebuild?</h5>
-                                                <p>I planned on a $6k budget (over the cost of the vehicle and went approx. $1k over due to some hidden damage).</p>
+                                                <p>I planned on a $6k budget (over the cost of the vehicle and went
+                                                    approx. $1k over due to some hidden damage).</p>
                                             </div>
 
                                             <div class="questions">
@@ -1323,7 +1411,8 @@ h3 {
 
                                             <div class="questions">
                                                 <h5>Why did you pick this truck?</h5>
-                                                <p>I have never owned a Jeep and really wanted to modify/repair one for years!</p>
+                                                <p>I have never owned a Jeep and really wanted to modify/repair one for
+                                                    years!</p>
                                             </div>
 
                                             <div class="questions">
@@ -1333,7 +1422,10 @@ h3 {
 
                                             <div class="questions">
                                                 <h5>Tell us a little about yourself.</h5>
-                                                <p>Lifelong motor head! I own an auto repair shop and despite doing repairs all day long for a living, my "hobby" is auto body and painting and Copart has been my "go to" for project buys for years!</p>
+                                                <p>Lifelong motor head! I own an auto repair shop and despite doing
+                                                    repairs all day long for a living, my "hobby" is auto body and
+                                                    painting and Copart has been my "go to" for project buys for years!
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -1390,7 +1482,8 @@ h3 {
 
                                             <div class="questions">
                                                 <h5>What was your budget on the Rebuild?</h5>
-                                                <p>My budget is around $7,000-$8,000 because I buy newer cars from 2016 up.</p>
+                                                <p>My budget is around $7,000-$8,000 because I buy newer cars from 2016
+                                                    up.</p>
                                             </div>
 
                                             <div class="questions">
@@ -1400,7 +1493,9 @@ h3 {
 
                                             <div class="questions">
                                                 <h5>Why did you pick a Hyunmdai?</h5>
-                                                <p>I love Hyundai cars because they are cheap to get and the parts aren't expensive. Also, they have a lot of features that in other cars you pay thousands for.</p>
+                                                <p>I love Hyundai cars because they are cheap to get and the parts
+                                                    aren't expensive. Also, they have a lot of features that in other
+                                                    cars you pay thousands for.</p>
                                             </div>
 
                                             <div class="questions">
@@ -1409,7 +1504,11 @@ h3 {
                                             </div>
 
                                             <div class="questions">
-                                                <h5>When COVID hit I lost my job and I had nothing to do, though I am a full-time student. So, I decided to use my savings to start something because I had no idea when I was going to go back to work. I made my first purchase and I had faith that I would make profit even though it was my first time, and it turned out good for me.</p>
+                                                <h5>When COVID hit I lost my job and I had nothing to do, though I am a
+                                                    full-time student. So, I decided to use my savings to start
+                                                    something because I had no idea when I was going to go back to work.
+                                                    I made my first purchase and I had faith that I would make profit
+                                                    even though it was my first time, and it turned out good for me.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1455,12 +1554,14 @@ h3 {
                                         <div>
                                             <div class="questions">
                                                 <h5>What was the hardest part of your truck to fix?</h5>
-                                                <p>The hardest thing for me was unbending a few parts without proper tools and skill.</p>
+                                                <p>The hardest thing for me was unbending a few parts without proper
+                                                    tools and skill.</p>
                                             </div>
 
                                             <div class="questions">
                                                 <h5>How many vehicles have you rebuilt?</h5>
-                                                <p>This was my 2nd car. I had rebuilt the 1st after my daughter had an accident. </p>
+                                                <p>This was my 2nd car. I had rebuilt the 1st after my daughter had an
+                                                    accident. </p>
                                             </div>
 
                                             <div class="questions">
@@ -1470,22 +1571,29 @@ h3 {
 
                                             <div class="questions">
                                                 <h5>How long did it take from start to finish?</h5>
-                                                <p>It took me a couple weeks from start to finish, because I had to wait for parts that I bought online.</p>
+                                                <p>It took me a couple weeks from start to finish, because I had to wait
+                                                    for parts that I bought online.</p>
                                             </div>
 
                                             <div class="questions">
                                                 <h5>Why did you pick this Suburban?</h5>
-                                                <p>I wanted to have a Suburban like that, but I could not afford it. It has a lot of meaning to me and I was very proud, I learned a lot.</p>
+                                                <p>I wanted to have a Suburban like that, but I could not afford it. It
+                                                    has a lot of meaning to me and I was very proud, I learned a lot.
+                                                </p>
                                             </div>
 
                                             <div class="questions">
                                                 <h5>Did you do it all yourself?</h5>
-                                                <p>I did complete the work by myself, everything. I did watch a few details on YouTube.</p>
+                                                <p>I did complete the work by myself, everything. I did watch a few
+                                                    details on YouTube.</p>
                                             </div>
 
                                             <div class="questions">
                                                 <h5>Tell us a little about yourself.</h5>
-                                                <p>I’m 60 years old. I still do home restoration, now I am slowly stopping doing that and I’m looking to maybe buy some damaged cars and rebuilding them and reselling others or keep for me or my family. I can see I’m very skilled with that.</p>
+                                                <p>I’m 60 years old. I still do home restoration, now I am slowly
+                                                    stopping doing that and I’m looking to maybe buy some damaged cars
+                                                    and rebuilding them and reselling others or keep for me or my
+                                                    family. I can see I’m very skilled with that.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1532,7 +1640,8 @@ h3 {
                                         <div>
                                             <div class="questions">
                                                 <h5>What was the hardest part of your truck to fix?</h5>
-                                                <p>The hardest part was pulling the entire dash out to replace the passenger side airbag and dash skin.</p>
+                                                <p>The hardest part was pulling the entire dash out to replace the
+                                                    passenger side airbag and dash skin.</p>
                                             </div>
 
                                             <div class="questions">
@@ -1542,27 +1651,35 @@ h3 {
 
                                             <div class="questions">
                                                 <h5>What was your budget on the Rebuild?</h5>
-                                                <p>Our budget was $13,000 and we ended up coming in under budget at $10,268.</p>
+                                                <p>Our budget was $13,000 and we ended up coming in under budget at
+                                                    $10,268.</p>
                                             </div>
 
                                             <div class="questions">
                                                 <h5>How long did it take from start to finish?</h5>
-                                                <p>Took right around 2 months. We worked on the truck when we had free time and also took some time to find parts.</p>
+                                                <p>Took right around 2 months. We worked on the truck when we had free
+                                                    time and also took some time to find parts.</p>
                                             </div>
 
                                             <div class="questions">
                                                 <h5>Why did you pick this truck?</h5>
-                                                <p>We were looking for something fairly easy with no major frame or cab damage for our first rebuild. Yes, it was a special memory to make with my father.</p>
+                                                <p>We were looking for something fairly easy with no major frame or cab
+                                                    damage for our first rebuild. Yes, it was a special memory to make
+                                                    with my father.</p>
                                             </div>
 
                                             <div class="questions">
                                                 <h5>Did you do it all yourself?</h5>
-                                                <p>Yes, we did everything ourselves beside the paint. This was a father/son project we plan on buying more trucks from Copart to work on together.</p>
+                                                <p>Yes, we did everything ourselves beside the paint. This was a
+                                                    father/son project we plan on buying more trucks from Copart to work
+                                                    on together.</p>
                                             </div>
 
                                             <div class="questions">
                                                 <h5>Tell us a little about yourself.</h5>
-                                                <p>I work as a Senior Cyber Security Specialist. My father is a retired coal miner. Was just looking for a new challenge to complete. After some Googling, I came across the Copart website and signed up.</p>
+                                                <p>I work as a Senior Cyber Security Specialist. My father is a retired
+                                                    coal miner. Was just looking for a new challenge to complete. After
+                                                    some Googling, I came across the Copart website and signed up.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1613,7 +1730,8 @@ h3 {
 
                                             <div class="questions">
                                                 <h5>How many vehicles have you rebuilt?</h5>
-                                                <p>I started doing this with a buddy when I was around 17, I have probably completed around 6 rebuilds since then.</p>
+                                                <p>I started doing this with a buddy when I was around 17, I have
+                                                    probably completed around 6 rebuilds since then.</p>
                                             </div>
 
                                             <div class="questions">
@@ -1638,7 +1756,9 @@ h3 {
 
                                             <div class="questions">
                                                 <h5>Tell us a little about yourself.</h5>
-                                                <p>Construction by trade, my buddy used to have a body shop when I was younger. I have always bought repairable vehicles and fixed them up.</p>
+                                                <p>Construction by trade, my buddy used to have a body shop when I was
+                                                    younger. I have always bought repairable vehicles and fixed them up.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -1688,13 +1808,271 @@ h3 {
             OPEN TO U.S., CANADA, & MEXICO
         </h2>
     </div>
-    
-    <script type="text/javascript">
 
+    <script type="text/javascript">
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg");
+
+        img.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementById("close1");
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // -------------------------------------------------------------------------------------------------------------------------
+
+        // Get the modal 2
+        var modal2 = document.getElementById("myModal2");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img2 = document.getElementById("myImg2");
+
+        img2.onclick = function () {
+            modal2.style.display = "block";
+        }
+        // Get the <span> element that closes the modal
+        var span = document.getElementById("close2");
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal2.style.display = "none";
+        }
+
+        // -------------------------------------------------------------------------------------------------------------------------
+
+        // Get the modal 3
+        var modal3 = document.getElementById("myModal3");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img3 = document.getElementById("myImg3");
+
+        img3.onclick = function () {
+            modal3.style.display = "block";
+        }
+        // Get the <span> element that closes the modal
+        var span = document.getElementById("close3");
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal3.style.display = "none";
+        }
+
+        // -------------------------------------------------------------------------------------------------------------------------
+
+        // Get the modal 4
+        var modal4 = document.getElementById("myModal4");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img4 = document.getElementById("myImg4");
+
+        img4.onclick = function () {
+            modal4.style.display = "block";
+        }
+        // Get the <span> element that closes the modal
+        var span = document.getElementById("close4");
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal4.style.display = "none";
+        }
+
+        // -------------------------------------------------------------------------------------------------------------------------
+
+        // Get the modal 5
+        var modal5 = document.getElementById("myModal5");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img5 = document.getElementById("myImg5");
+
+        img5.onclick = function () {
+            modal5.style.display = "block";
+        }
+        // Get the <span> element that closes the modal
+        var span = document.getElementById("close5");
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal5.style.display = "none";
+        }
+
+        // -------------------------------------------------------------------------------------------------------------------------
+
+        // Get the modal 6
+        var modal6 = document.getElementById("myModal6");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img6 = document.getElementById("myImg6");
+
+        img6.onclick = function () {
+            modal6.style.display = "block";
+        }
+        // Get the <span> element that closes the modal
+        var span = document.getElementById("close6");
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal6.style.display = "none";
+        }
+
+        // -------------------------------------------------------------------------------------------------------------------------
+
+        // Get the modal 7
+        var modal7 = document.getElementById("myModal7");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img7 = document.getElementById("myImg7");
+
+        img7.onclick = function () {
+            modal7.style.display = "block";
+        }
+        // Get the <span> element that closes the modal
+        var span = document.getElementById("close7");
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal7.style.display = "none";
+        }
+
+        // -------------------------------------------------------------------------------------------------------------------------
+
+        // Get the modal 8
+        var modal8 = document.getElementById("myModal8");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img8 = document.getElementById("myImg8");
+
+        img8.onclick = function () {
+            modal8.style.display = "block";
+        }
+        // Get the <span> element that closes the modal
+        var span = document.getElementById("close8");
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal8.style.display = "none";
+        }
+
+        // -------------------------------------------------------------------------------------------------------------------------
+
+        // Get the modal 9
+        var modal9 = document.getElementById("myModal9");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img9 = document.getElementById("myImg9");
+
+        img9.onclick = function () {
+            modal9.style.display = "block";
+        }
+        // Get the <span> element that closes the modal
+        var span = document.getElementById("close9");
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal9.style.display = "none";
+        }
+
+        // -------------------------------------------------------------------------------------------------------------------------
+
+        // Get the modal 10
+        var modal10 = document.getElementById("myModal10");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img10 = document.getElementById("myImg10");
+
+        img10.onclick = function () {
+            modal10.style.display = "block";
+        }
+        // Get the <span> element that closes the modal
+        var span = document.getElementById("close10");
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal10.style.display = "none";
+        }
+
+        // -------------------------------------------------------------------------------------------------------------------------
+
+        // Get the modal 11
+        var modal11 = document.getElementById("myModal11");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img11 = document.getElementById("myImg11");
+
+        img11.onclick = function () {
+            modal11.style.display = "block";
+        }
+        // Get the <span> element that closes the modal
+        var span = document.getElementById("close11");
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal11.style.display = "none";
+        }
+
+        // -------------------------------------------------------------------------------------------------------------------------
+
+        // Get the modal 12
+        var modal12 = document.getElementById("myModal12");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img12 = document.getElementById("myImg12");
+
+        img12.onclick = function () {
+            modal12.style.display = "block";
+        }
+        // Get the <span> element that closes the modal
+        var span = document.getElementById("close12");
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal12.style.display = "none";
+        }
+
+        // -------------------------------------------------------------------------------------------------------------------------
     </script>
 
-<script type="text/javascript">
+    <script type="text/javascript">
+        var slideIndex = 1;
+        showSlides(slideIndex);
 
-</script>
-    
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
 </div>
